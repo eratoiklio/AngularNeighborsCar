@@ -1,1 +1,13 @@
-<p>book-ride works!</p>
+<div id="bookRide">
+    <h1>How many seats you want to book?</h1>
+    <div class="counter">
+        <fa-icon id="decrease"class="arrowIcon" [icon]="faAngleLeft" (click)="modifySeats()"></fa-icon>
+        <input type="text" value="" (change)="handelOnChange()" />
+        <fa-icon id="increase" class="arrowIcon" [icon]='faAngleRight' (click)="modifySeats()"></fa-icon>
+        <button class="bookRideButton" (click)="bookeRide()"> 
+            <fa-icon [icon]="faCheck"></fa-icon>
+        </button>
+    </div>
+    <h1>The ride you are booking</h1>
+    <i class="fas fa-angle-right"></i>
+</div>

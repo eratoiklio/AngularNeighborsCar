@@ -1,0 +1,19 @@
+#bookRide{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  #bookRide h1{
+    margin-bottom: 40px;
+  }
+  #bookRide .counter{
+    display: flex;
+    justify-content: center;
+  }
+  #bookRide .arrowIcon, #bookRide input[type='text'] {
+    font-size:40px;
+  }
+  #bookRide input[type='text'] {
+    margin: 0 20px;
+    border-radius: 5px;
+  };

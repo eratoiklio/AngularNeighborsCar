@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+
 import { BookRideComponent } from './book-ride/book-ride.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { OfferedRidesComponent } from './offered-rides/offered-rides.component';
@@ -18,11 +19,12 @@ import { TakenRidesComponent } from './taken-rides/taken-rides.component';
     OfferedRidesComponent,
     SearchRideComponent,
     NewRideComponent,
-    TakenRidesComponent
-  ],
+    TakenRidesComponent,
+    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
