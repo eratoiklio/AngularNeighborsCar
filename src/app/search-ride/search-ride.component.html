@@ -1,1 +1,19 @@
-<app-book-ride></app-book-ride>
+<div>
+    <div class="searchRides">
+        <form (submit)="handleSubmit()">
+            <input type="text" id="from" placeholder="from" (change)="handleChange()" />
+            <input type="text" id="to" placeholder="to" (change)="handleChange()" />
+            <div class="calendarSection">
+                <fa-icon data-testid="searchCalendarIcon" [icon]="faCalendarAlt" (click)="showCalendar()"></fa-icon>
+                <!-- <p class="date">{{this.searchCriteria.date.toLocaleDateString()}}</p> -->
+            </div>
+            <button class="searchButton">
+                <fa-icon [icon]="faSearch" (click)="search('a')"></fa-icon>
+            </button>
+        </form>
+    </div>
+    <div data-testid="searchCalendar" class="calendar">
+      <!-- calendar here -->
+    </div>
+    <app-rides [rides]='filteredRides'></app-rides>
+</div>

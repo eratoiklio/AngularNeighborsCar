@@ -1,0 +1,32 @@
+.searchRides {
+  padding: 30px;
+}
+
+.searchRides form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    
+    }
+    .searchRides input{
+      margin :10px;
+      border: 1px solid lightslategrey;
+      padding: 10px;
+      width: 500px;
+      border-radius: 5px;;
+    }
+    .searchRides button{
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .searchButton {
+      position: absolute;
+      right: 50px;
+      top: 400px;
+      font-size: 25px }
+      .date {
+        display: inline;
+        margin-left: 10px;
+      }

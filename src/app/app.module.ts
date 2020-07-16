@@ -10,6 +10,7 @@ import { OfferedRidesComponent } from './offered-rides/offered-rides.component';
 import { SearchRideComponent } from './search-ride/search-ride.component';
 import { NewRideComponent } from './new-ride/new-ride.component';
 import { TakenRidesComponent } from './taken-rides/taken-rides.component';
+import { RidesComponent } from './rides/rides.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { TakenRidesComponent } from './taken-rides/taken-rides.component';
     SearchRideComponent,
     NewRideComponent,
     TakenRidesComponent,
+    RidesComponent
     ],
   imports: [
     BrowserModule,

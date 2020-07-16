@@ -1,0 +1,13 @@
+<div *ngFor="let ride of rides">
+    <div class="ride" (click)='handleClick(ride.id)'>
+        <p>
+            from: {{ride.from}}
+        </p>
+        <p>
+            to:  {{ride.to}}
+        </p>
+        <p>
+            date: {{ride.date.toLocaleDateString()}}
+        </p>
+    </div>
+</div>
